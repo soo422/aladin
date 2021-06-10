@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aladin</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="top-wrap">
+        <header>
+            <div class="top container">
+                <div class="logo-wrap">
+                    <h1 class="logo"><a href="index.html">logo</a></h1>
+                    <i class="fas fa-chevron-down arr"></i>
+                    <ul class="more-site">
+                        <li><a href="index.html"><i class="fab fa-atlassian"></i><span>알라딘</span></a></li>
+                        <li><a href=""><i class="fas fa-map-marker-alt"></i><span>매장찾기</span></a></li>
+                        <li><a href=""><i class="fas fa-search-dollar"></i><span>매입가 조회</span></a></li>
+                        <li><a href=""><i class="fas fa-mobile-alt"></i><span>지니오더</span></a></li>
+                        <li><a href=""><i class="far fa-building"></i><span>알라딘에 팔기</span></a></li>
+                        <li><a href=""><i class="fas fa-users"></i><span>회원에게 팔기</span></a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="shopping-cart">   
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="member-nav">
+        <ul class="member">
+            <li><a href="#member-form" class="on">회원 로그인</a></li>
+            <li><a href="#nonmember-form" class="off">비회원 주문조회</a></li>
+        </ul>
+    </div>
+    <form action="#" method="POST" id="member-form">
+        <div class="login">
+            <div class="id-log">
+                <input type="email" name="userid" value="" placeholder="이메일 입력" required>
+            </div>
+            <div class="password-log">
+                <input type="password" name="userpassword" minlength="8" maxlength="16"  value=""
+                placeholder="비밀번호 입력" required>
+            </div>
+            <div class="keeping-login">
+                <label>
+                    로그인 상태 유지
+                    <input type="checkbox" name="keep" value="로그인유지">
+                </label>
+            </div>
+            <button class="login-btn">로그인</button>
+        </div>
+    </form>
+    <form action="#" method="POST" id="nonmember-form">
+        <div class="login">
+            <p>비회원 주문에 사용한 이메일과 비밀번호를 입력하시길 바랍니다.</p>
+            <div class="id-log">
+                <input type="email" name="userid" value="" placeholder="이메일 입력" required>
+            </div>
+            <div class="password-log">
+                <input type="password" name="userpassword" minlength="8" maxlength="16"  value=""
+                placeholder="비밀번호 입력" required>
+            </div>
+            <div class="keeping-login">
+                <label>
+                    로그인 상태 유지
+                    <input type="checkbox" name="keep" value="로그인유지">
+                </label>
+            </div>
+            <button class="login-btn">로그인</button>
+        </div>
+    </form>
+    <div class="finding">
+        <ul>
+            <li><a href="">아이디 찾기</a></li>
+            <li><a href="">비밀번호 찾기</a></li>
+            <li><a href="">회원가입</a></li>
+        </ul>
+    </div>
+    <footer>
+        <ul class="terms container">
+            <li>이용약관</li>
+            <li><em>개인정보처리방침</em></li>
+            <li>청소년 보호 정책</li>
+            <li>협력사 여러분</li>
+        </ul>
+        <hr>
+        <div class="btm clearfix container">
+            <button class="business-info">사업자 정보</button>
+            <ul class="inform">
+                <li>대표이사 : 최우경 </li>
+                <li>고객정보보호 책임자 : 최우경</li>
+                <li>사업자등록 : 201-81-23094</li>
+                <li> 통신판매업신고 : 중구01520호</li>
+                <li>  호스팅 제공자 : 알라딘커뮤니케이션</li>
+                <li>본사 : 서울시 중구 서소문로 26</li>
+                <li>중고매장위치 : 자세히보기</li>
+                <li> &copy; Aladin Communication. All Rights Reserved.</li>
+            </ul>
+        </div>
+    </footer>
+    <div class="bottom-nav">
+        <ul class="btm">
+            <li><a href="menu.html"><i class="fas fa-bars"></i></a></li>
+            <li><a href=""><i class="fas fa-barcode"></i></a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href=""><i class="far fa-user"></i></a></li>
+            <li><a href=""><i class="far fa-bell"></i></a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
